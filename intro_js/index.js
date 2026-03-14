@@ -59,3 +59,35 @@ console.log(`Aprendendo ${linguagem}`)
 // console.log(calculadora.operacoes.soma(2,3))
 // console.log(calculadora["operacoes"]["subtracao"](4, 5))
 // console.log(calculadora.operacoes.divisao(1,3))
+
+function demorada(tempo){
+    const dataAtualMais2Segundos = new Date().getTime() + tempo
+    while(new Date().getTime() <= dataAtualMaisTempo);
+    const d = 8 + 2 * 6
+    return d
+}
+
+setTimeout(() => {
+    console.log("Agendada pelo setTimeout")
+}, 0)
+const dataAtualMais5Segundos = new Date().getTime() + 5000
+while(new Date().getTime() <= dataAtualMais5Segundos);
+console.log("Terminando o script principal...")
+
+// const a = 2 + 3
+// const b = 6 * 1
+// // const d = demorada()
+
+// setTimeout(() => {
+//     const d = demorada()
+//     console.log(`d: ${d}`)
+// }, 500) // No log aparece depois de "e" ser exibido
+
+// const e = a + b * 2
+
+// console.log(`e: ${e}`)
+// console.log(a + b) 
+
+// console.log("Eu primeiro...")
+// console.log("Agora eu...")
+// console.log("Sempre serei a ultima...")
