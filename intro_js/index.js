@@ -80,3 +80,18 @@
 // console.log(pessoa['endereco']['numero']) // 50
 // console.log(pessoa.endereco['logradouro']) //Rua B
 // console.log(pessoa['endereco'].numero) // 50
+
+const veiculo = {
+    modelo: "A",
+    marca: "bc",
+    placa: "abcd89"
+}
+
+const concessionaria = {
+    nome: "Concessionaria",
+    CNPJ: "1234",
+    endereco: {
+        logradouro: 'Rua B',
+        numero: 50
+    }
+}
