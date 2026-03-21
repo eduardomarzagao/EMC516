@@ -121,25 +121,34 @@ console.log(`Aprendendo ${linguagem}`)
 //         ac += i
 //     return ac
 // }
-const calculoDemorado = (n) => {
-    return new Promise((resolve, reject) =>{
-        // Se n for negativo, propagar um erro
-        // Caso contrário, continua como já era
-        if(n > 0){
-            let ac = 0
-            for(let i = 1; i <= n; i++)
-                ac += i
-            resolve(ac)
-        }
-        else{
-            reject(`Erro, n menor que 0! Valor de n:${n}`)
-        }
-        
-    })
+
+const calculoRapido = (n) => {
+    return n >= 0 ? Promise.resolve((n/2) * (n+1)) : Promise.reject('Apenas valores maiores ou iguais a zero, por favor')
 }
-const minhaPromise = calculoDemorado(1000)
-//then/catch
-minhaPromise
-.then((resultado) => {console.log(`Resultado: ${resultado}`)})
-.catch((erro) => {console.log(`Erro: ${erro}`)})
+calculoRapido(1000)
+.then(function(resultado){console.log(`Resultado: ${resultado}`)})
+.catch(erro => console.log(`Erro: ${erro}`))
 console.log("A")
+
+// const calculoDemorado = (n) => {
+//     return new Promise((resolve, reject) =>{
+//         // Se n for negativo, propagar um erro
+//         // Caso contrário, continua como já era
+//         if(n > 0){
+//             let ac = 0
+//             for(let i = 1; i <= n; i++)
+//                 ac += i
+//             resolve(ac)
+//         }
+//         else{
+//             reject(`Erro, n menor que 0! Valor de n:${n}`)
+//         }
+        
+//     })
+// }
+// const minhaPromise = calculoDemorado(1000)
+//then/catch
+// minhaPromise
+// .then((resultado) => {console.log(`Resultado: ${resultado}`)})
+// .catch((erro) => {console.log(`Erro: ${erro}`)})
+// console.log("A")

@@ -1,0 +1,5 @@
+npm init -y
+npm i axios
+
+openWeatherMap
+6886@Weather
