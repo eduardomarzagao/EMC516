@@ -1,0 +1,3 @@
+Para fazer o código rodar no terminal bash:
+    node --watch "arquivo.js" 
+Obs: Você tem que estar dentro da pasta correta
